@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "image": "./assets/images/370z.png",
+        "make": "Nissan",
+        "model": "370z"
+    },
+    {
+        "id": 2,
+        "image": "./assets/images/aventador.jfif",
+        "make": "Lamborghini",
+        "model": "Aventador"
+    },
+    {
+        "id": 3,
+        "image": "./assets/images/aw11.jpg",
+        "make": "Toyota",
+        "model": "MR2"
+    },
+    {
+        "id": 4,
+        "image": "./assets/images/chiron.jpg",
+        "make": "Bugatti",
+        "model": "Chiron"
+    },
+    {
+        "id": 5,
+        "image": "./assets/images/elise.jpg",
+        "make": "Lotus",
+        "model": "Elise"
+    },
+    {
+        "id": 6,
+        "image": "./assets/images/gt2rs.png",
+        "make": "Porsche",
+        "model": "911 GT2RS"
+    },
+    {
+        "id": 7,
+        "image": "./assets/images/huayra.jpg",
+        "make": "Pagani",
+        "model": "Huayra"
+    },
+    {
+        "id": 8,
+        "image": "./assets/images/laferrari.jpg",
+        "make": "Ferrari",
+        "model": "LaFerrari"
+    },
+    {
+        "id": 9,
+        "image": "./assets/images/mclaren570s.jpg",
+        "make": "McLaren",
+        "model": "570s"
+    },
+    {
+        "id": 10,
+        "image": "./assets/images/mcqueen.jfif",
+        "make": "Lightning",
+        "model": "McQueen"
+    },
+    {
+        "id": 11,
+        "image": "./assets/images/mx5.png",
+        "make": "Mazda",
+        "model": "MX-5"
+    },
+    {
+        "id": 12,
+        "image": "./assets/images/nsx.jpg",
+        "make": "Acura",
+        "model": "NSX"
+    },
+    {
+        "id": 13,
+        "image": "./assets/images/s2000.jpg",
+        "make": "Honda",
+        "model": "S2000"
+    },
+    {
+        "id": 14,
+        "image": "./assets/images/supra.jpg",
+        "make": "Toyota",
+        "model": "Supra"
+    },
+    {
+        "id": 15,
+        "image": "./assets/images/typer.jpg",
+        "make": "Honda",
+        "model": "Civic Type R"
+    },
+    {
+        "id": 16,
+        "image": "./assets/images/z4.jfif",
+        "make": "BMW",
+        "model": "Z4"
+    }
+]
