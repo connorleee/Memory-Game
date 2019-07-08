@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Tile from './components/Tile'
 import './App.css';
+import GameBoard from './components/GameBoard';
 
 class App extends Component {
   state = {
@@ -30,7 +30,7 @@ class App extends Component {
           </div>
         </nav>
 
-        <Tile />
+        <GameBoard />
 
       </div>
     );

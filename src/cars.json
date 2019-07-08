@@ -1,5 +1,11 @@
 [
     {
+        "id": 0,
+        "image": "./assets/images/z4.jfif",
+        "make": "BMW",
+        "model": "Z4"
+    },
+    {
         "id": 1,
         "image": "./assets/images/370z.png",
         "make": "Nissan",
@@ -88,11 +94,5 @@
         "image": "./assets/images/typer.jpg",
         "make": "Honda",
         "model": "Civic Type R"
-    },
-    {
-        "id": 16,
-        "image": "./assets/images/z4.jfif",
-        "make": "BMW",
-        "model": "Z4"
     }
 ]
