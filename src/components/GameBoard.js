@@ -4,7 +4,7 @@ import Tile from "./Tile"
 
 class GameBoard extends Component {
     state = {
-        selectedImgs: [],
+        selectedImgIds: [],
         imgDisplayOrder: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12],
         cars: cars
     }
@@ -33,8 +33,9 @@ class GameBoard extends Component {
         this.setState({ imgDisplayOrder: newOrder })
     }
 
-    handleClick = event => {
-
+    handleClick = () => {
+        // need to be able to grab the key from the clicked tile. 
+        // if statement or tertiary statement to handle if image has been clicked or not   
     }
 
     render() {
@@ -42,7 +43,7 @@ class GameBoard extends Component {
             <div className="container">
                 <div className="row">
                     {this.state.imgDisplayOrder.map(carId => (
-                        <Tile key={carId} image={this.state.cars[carId].image} make={this.state.cars[carId].make} model={this.state.cars[carId].model} />
+                        <Tile key={carId} onClick={this.handleClick} image={this.state.cars[carId].image} make={this.state.cars[carId].make} model={this.state.cars[carId].model} />
                     ))}
                 </div>
             </div>

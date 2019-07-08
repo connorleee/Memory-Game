@@ -4,7 +4,7 @@ function Tile(props) {
     return (
         <div className="col-md-3">
             <div className="card text-white bg-primary mb-3">
-                <img src={props.image} className="card-img" alt={`${props.make} ${props.model}`} />
+                <img src={props.image} className="card-img" alt={`${props.make} ${props.model}`} onClick={props.onClick} />
             </div>
         </div>
     )
