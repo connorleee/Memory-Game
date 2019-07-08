@@ -40,11 +40,13 @@ class Tile extends Component {
         return (
             <div className="container">
                 <div className="row">
+                    {this.state.imgDisplayOrder.map(carId => (
                     <div className="col-md-3">
                         <div className="card text-white bg-primary mb-3">
-                            <img src={this.state.cars[3].image} className="card-img" alt="" />
+                            <img src={this.state.cars[carId].image} key={carId} className="card-img" alt="" />
                         </div>
                     </div>
+                    ))}
                 </div>
             </div>
         )
