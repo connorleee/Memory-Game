@@ -53,15 +53,15 @@ class App extends Component {
         selectedImgIds: []
       })
     } else {
-      if (this.currentScore < this.highScore) {
+      if (this.state.currentScore < this.state.highScore) {
         this.setState({
-          currentScore: this.currentScore++
+          currentScore: this.state.currentScore + 1
           // selectedImgId: this.selectedImgId.push(imgSelectedPrev)
         })
       } else {
         this.setState({
-          currentScore: this.currentScore++,
-          highScore: this.highScore++
+          currentScore: this.state.currentScore +1,
+          highScore: this.state.highScore + 1
           // selectedImgId: this.selectedImgId.push(imgSelectedPrev)
         })
       }
