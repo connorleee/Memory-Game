@@ -1,10 +1,16 @@
 import React from "react"
 
+const styles = {
+    card: {
+        minHeight: "200px"
+    }
+}
+
 function Tile(props) {
     return (
         <div className="col-md-3">
-            <div className="card text-white bg-primary mb-3">
-                <img src={props.image} className="card-img" alt={`${props.make} ${props.model}`} onClick={props.onClick} />
+            <div className="card text-white bg-light mb-4" style={styles.card}>
+                <img src={props.image} className="card-img my-auto" alt={`${props.make} ${props.model}`} onClick={props.onClick} />
             </div>
         </div>
     )
