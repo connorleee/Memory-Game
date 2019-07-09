@@ -43,10 +43,14 @@ class App extends Component {
     console.log(e.target)
     console.log(e.target.getAttribute("data-id"))
 
+    const imgSelectedId = e.target.getAttribute("data-id")
     const imgSelectedPrev = this.state.selectedImgIds.includes(e.target.getAttribute("data-id"))
 
+    console.log(this.state.selectedImgIds)
+    console.log(imgSelectedPrev)
+
     if (imgSelectedPrev) {
-      alert("You have already selected this image. Try again")
+      alert(`Game Over!\n\nYou have already selected this image.\n\nClick "OK" to play again!`)
       this.setState({
         currentScore: 0,
         selectedImgIds: []
@@ -54,14 +58,14 @@ class App extends Component {
     } else {
       if (this.state.currentScore < this.state.highScore) {
         this.setState({
-          currentScore: this.state.currentScore + 1
-          // selectedImgId: this.selectedImgId.push(imgSelectedPrev)
+          currentScore: this.state.currentScore + 1,
+          selectedImgId: this.state.selectedImgIds.push(imgSelectedId)
         })
       } else {
         this.setState({
           currentScore: this.state.currentScore +1,
-          highScore: this.state.highScore + 1
-          // selectedImgId: this.selectedImgId.push(imgSelectedPrev)
+          highScore: this.state.highScore + 1,
+          selectedImgId: this.state.selectedImgIds.push(imgSelectedId)
         })
       }
     }
