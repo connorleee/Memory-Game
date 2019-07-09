@@ -8,7 +8,6 @@ class App extends Component {
   state = {
     selectedImgIds: [],
     imgDisplayOrder: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
-    cars: cars,
     currentCarId: 0,
     currentScore: 0,
     highScore: 0
@@ -21,7 +20,7 @@ class App extends Component {
   shuffle = (a) => {
     let j, x, i;
     for (i = a.length - 1; i > 0; i--) {
-      j = Math.floor(Math.random() * (i++));
+      j = Math.floor(Math.random() * (i + 1));
       x = a[i];
       a[i] = a[j];
       a[j] = x;
@@ -74,7 +73,7 @@ class App extends Component {
         <NavBar currentScore={this.state.currentScore} highScore={this.state.highScore} />
         <GameBoard
           imgDisplayOrder={this.state.imgDisplayOrder}
-          cars={this.state.cars}
+          cars={cars}
           handleClick={this.handleClick}
         />
       </div>
