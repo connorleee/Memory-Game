@@ -50,18 +50,21 @@ class App extends Component {
     console.log(imgSelectedPrev)
 
     if (imgSelectedPrev) {
-      alert(`Game Over!\n\nYou have already selected this image.\n\nClick "OK" to play again!`)
+      alert(`Game Over!\n\nYou have already selected the ${e.target.getAttribute("alt")}.\n\nClick "OK" to play again!`)
+      this.rndDisplayOrder()
       this.setState({
         currentScore: 0,
         selectedImgIds: []
       })
     } else {
       if (this.state.currentScore < this.state.highScore) {
+        this.rndDisplayOrder()
         this.setState({
           currentScore: this.state.currentScore + 1,
           selectedImgId: this.state.selectedImgIds.push(imgSelectedId)
         })
       } else {
+        this.rndDisplayOrder()
         this.setState({
           currentScore: this.state.currentScore +1,
           highScore: this.state.highScore + 1,
